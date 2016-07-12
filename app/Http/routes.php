@@ -15,6 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::group([], function () {
-
-});
+Route::any('/start', 'QueueTestController@index');

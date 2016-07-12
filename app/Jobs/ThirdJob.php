@@ -10,13 +10,18 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 class ThirdJob extends Job implements ShouldQueue
 {
     use InteractsWithQueue, SerializesModels;
+    /**
+     * @var array
+     */
+    private $data;
 
     /**
      * Create a new job instance.
+     * @param array $data
      */
-    public function __construct()
+    public function __construct(array $data)
     {
-        //
+        $this->data = $data;
     }
 
     /**
@@ -26,7 +31,7 @@ class ThirdJob extends Job implements ShouldQueue
      */
     public function handle()
     {
-        //
+        \Log::info('Third Job started!', $this->data);
     }
 
 }
