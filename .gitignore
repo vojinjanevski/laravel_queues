@@ -5,3 +5,6 @@ Homestead.yaml
 Homestead.json
 .env
 _ide_helper.php
+.idea
+.idea/modules.xml
+.idea/workspace.xml

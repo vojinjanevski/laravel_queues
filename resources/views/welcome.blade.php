@@ -16,7 +16,7 @@
                 width: 100%;
                 display: table;
                 font-weight: 100;
-                font-family: 'Lato';
+                font-family: Lato, serif;
             }
 
             .container {
@@ -38,7 +38,7 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Laravel 5, glupi cova....</div>
+                <div class="title">Laravel 5</div>
             </div>
         </div>
     </body>
